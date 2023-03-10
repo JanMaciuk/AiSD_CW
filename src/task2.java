@@ -3,7 +3,7 @@ import java.util.ListIterator;
 
 public class task2 {
     public static void main(String[] args) {
-        int elements = 9;
+        int elements = 12; //Ile elementów ciągu chcemy zwrócić (minimum 2)
         if (elements < 2) {
             System.out.println("Podaj liczbę większą od 2");
             return;

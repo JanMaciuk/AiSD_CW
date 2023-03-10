@@ -14,7 +14,7 @@ public class task3 {
         list2.add(11);
         list2.add(12);
         list2.add(13);
-        list2.add(14);
+        list2.add(5);
         ListIterator<Integer> iterator1 = list1.listIterator();
         ListIterator<Integer> iterator2 = list2.listIterator();
         System.out.println(mixLists(iterator1, iterator2));
@@ -24,6 +24,16 @@ public class task3 {
         while(iterator1.hasNext() && iterator2.hasNext()) {
             iterator3.add(iterator1.next());
             iterator3.add(iterator2.next());
+        }
+        if (iterator1.hasNext() && !iterator2.hasNext()) {
+            while(iterator1.hasNext()) {
+                iterator3.add(iterator1.next());
+            }
+        }
+        else if (!iterator1.hasNext() && iterator2.hasNext()) {
+            while(iterator2.hasNext()) {
+                iterator3.add(iterator2.next());
+            }
         }
         return list3;
     }

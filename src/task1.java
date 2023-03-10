@@ -12,16 +12,14 @@ public class task1 {
         list.add("1");
         list.add("2");
         ListIterator<String> iterator = list.listIterator();
-        printElemeents(iterator);
+        printElements(iterator);
     }
 
 
-
-
-
-    public static void printElemeents(ListIterator<String> iterator) {
-        while(iterator.hasNext()) {
-            System.out.println(iterator.next());
+    public static void printElements(ListIterator<String> iterator) {
+        ListIterator<String> drugiIterator = iterator;
+        while(drugiIterator.hasNext()) {
+            System.out.println(drugiIterator.next());
         }
     }
 
