@@ -14,7 +14,7 @@ public class Task4 {
     private static final Student student3 = new Student("Anna", "Kowalska", 3000, 3, true);
     private static final Student student4 = new Student("Katarzyna", "Nowak", 4000, 4, true);
     private static final int szukanyIndex = 9000;
-    private static final int indexDoUsuniecia = 2000;
+    private static final int indeksDoUsuniecia = 2000;
 
     public static void main(String[] args) {
         //Demonstracja funkcjonalności Hashtable
@@ -36,10 +36,10 @@ public class Task4 {
         System.out.println("W bazie danych znajduje się " + studenci.size() + " studentów.");
 
 
-        if (studenci.remove(indexDoUsuniecia) == null) { // studenci remove zwraca null jeżeli dla podanego klucza nie jest przypisana żadna wartość.
-            System.out.println("Student o indeksie " + indexDoUsuniecia + " nie znajdował się w bazie, więc nie został usunięty.");
+        if (studenci.remove(indeksDoUsuniecia) == null) { // studenci remove zwraca null jeżeli dla podanego klucza nie jest przypisana żadna wartość.
+            System.out.println("Student o indeksie " + indeksDoUsuniecia + " nie znajdował się w bazie, więc nie został usunięty.");
         }
-        else { System.out.println("Student o indeksie " + indexDoUsuniecia + " został usunięty."); }
+        else { System.out.println("Student o indeksie " + indeksDoUsuniecia + " został usunięty."); }
 
     }
 
